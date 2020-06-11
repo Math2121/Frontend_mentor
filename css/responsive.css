@@ -1,0 +1,119 @@
+@media (max-width:1100px){
+    .grid-group-two {
+        grid-template-columns: 1fr;
+    }
+
+    .item-1, .item-2, .item-3 {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .flex-user{
+        margin-top: 30px;
+    }
+
+    .flex-group {
+        flex-direction: column;
+    }
+
+    .flex-group img{
+        width: 50%;
+    }
+
+    .grid-group {
+        grid-template-columns: 1fr;
+    }
+
+    .introduce img{
+        width: 50%;
+    }
+
+    main {
+        background: url(../images/bg-curvy-mobile.svg) no-repeat;
+        width: 100%;
+        background-color: hsl(217, 28%, 15%);
+        background-size: 100% 700px;
+        margin-top: 25px;
+        background-position: 0 0;
+
+    }
+
+   
+
+    form .input-group input {
+        
+        width: 100%;
+       
+    }
+
+    form .input-group button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+@media (max-width:900px){
+    main {
+        background: url(../images/bg-curvy-mobile.svg) no-repeat;
+        width: 100%;
+        background-color: hsl(217, 28%, 15%);
+        background-size: 100% 550px;
+        margin-top: 25px;
+        background-position: 0 0;
+
+    }
+
+    footer .contact {
+        margin:0;
+        
+
+    }
+    footer{
+        grid-template-columns: 1fr;
+    }
+
+    footer .attribution {
+        margin:0;
+        grid-template-columns: 1fr;
+    }
+
+    footer .attribution ul{
+        padding-left: 0;
+    }
+
+    .icons{
+        margin-top: 100px;
+        margin:auto;
+    }
+
+    form .input-group input {
+        
+        width: 100%;
+       
+    }
+
+    form .input-group button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .icons .facebook img{
+
+        margin-right: 10px;
+    }
+    
+
+    
+    .icons .twitter img{
+       
+        margin-right: 10px;
+    }
+
+    
+}

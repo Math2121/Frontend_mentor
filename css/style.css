@@ -1,0 +1,340 @@
+@import url('https://fonts.google.com/specimen/Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --dark-blue-intro: hsl(217, 28%, 15%);
+    --dark-blue-main: hsl(218, 28%, 13%);
+    --dark-blue-footer: hsl(216, 53%, 9%);
+    --dark-blue-testimonials: hsl(219, 30%, 18%);
+    --white: hsl(0, 0%, 100%);
+    --size-font: 14px;
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --family: 'Raleway',sans-serif;
+    --family2: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: var(--size-font);
+    background-color: var(--dark-blue-intro);
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#content {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav a {
+    font-family: var(--family);
+    margin-right: 20px;
+    font-size: var(--size-font);
+    text-decoration: none;
+    color: var(--white);
+}
+main{
+    background: url(../images/bg-curvy-desktop.svg) no-repeat;
+    width: 100%;
+ 
+    background-color: hsl(217, 28%, 15%);
+    background-size: cover;
+    margin-top: 25px;
+    background-position: 0 0;
+}
+
+main .introduce {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .introduce h1 {
+    font-family: var(--family2);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    color: var(--white);
+}
+
+main .introduce p {
+    color: var(--white);
+    margin: 20px auto;
+    font-size: 1.05rem;
+    max-width: 600px;
+    text-align: center;
+    font-family: var(--family);
+}
+
+main .introduce button {
+    border: 0;
+    border-radius: 30px;
+    width: 200px;
+    margin-top: 50px;
+    height: 50px;
+    font-weight: 700;
+    font-size: var(--size-font);
+    color: var(--white);
+    background-image: linear-gradient( to right, var(--Cyan), var(--Blue));
+}
+
+.features {
+    background-color: var(--dark-blue-main);
+    padding:20px;
+}
+
+.features .container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+.grid-group {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    width: 90%;
+}
+
+.grid-item {
+    color: var(--white);
+    margin-bottom: 50px;
+}
+
+.grid-item h2 {
+    font-family: var(--family2);
+}
+
+.grid-item p {
+    font-size: var(--size-font);
+    line-height: 1.5rem;
+    font-family: var(--family);
+}
+
+.flex-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-group .text-productive{
+    color:var(--white);
+    margin-left:50px
+
+}
+.flex-group .text-productive h2{
+    font-family:var(--family2);
+    font-size:30px;
+}
+
+.flex-group .text-productive p{
+    font-size:12px;
+    font-family: var(--family2);
+    
+}
+
+.flex-group .text-productive a{
+    color: var(--Cyan);
+    font-family: var(--family2);
+    font-size: 12px;
+    display: flex;
+    font-weight: 200;
+    text-decoration: none;
+    border-bottom: 1px solid var(--Cyan);
+    width: 160px;
+}
+
+.flex-group .text-productive span{
+    background-image: url('../images/icon-arrow.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    
+}
+
+.grid-group-two{
+   background: url('../images/bg-quotes.png') no-repeat;
+    display: grid;
+    padding: 32px 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-size: 50px 48px;
+    background-position: 0 0;
+    gap:20px;
+   
+    
+    color: var(--white);
+    margin-top: 60px;
+    font-size: 12px;
+    
+    
+}
+
+
+
+.flex-user{
+    display: flex;
+    align-items: center;
+   
+}
+
+
+
+.item-1, .item-2 , .item-3{
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    padding-top: 50px;
+    padding: 25px;
+    background-color: var(--dark-blue-testimonials);
+    font-family: var(--family2);
+    margin-bottom: 150px;
+    font-size: 15px;
+}
+
+.flex-user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue-intro);
+    border-radius: 5px;
+    width: 50%;
+    
+    padding: 30px;
+    margin:0 auto;
+    position: relative;
+    top: 100px;
+   
+    
+}
+
+form h1{
+    font-family: var(--family);
+    font-size: 24px;
+}
+
+form p{
+    font-family: var(--family);
+    text-align: center;
+}
+form .input-group{
+margin-top: 50px;
+}
+form .input-group input{
+    border: 0;
+    width: 350px;
+    height: 50px;
+    border-radius: 50px;
+
+}
+
+form .input-group button{
+    border: 0;
+    border-radius: 50px;
+    background:linear-gradient( to right, var(--Cyan), var(--Blue)); 
+    width: 150px;
+    color: var(--white);
+    font-weight: 700;
+    font-family: var(--family2);
+    height: 50px;
+    margin-left: 15px;
+    
+}
+footer{
+  
+    background: var(--dark-blue-footer);
+    color: var(--white);
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    padding-top: 150px;
+   
+
+}
+
+footer .location,
+footer .contact{
+    display: flex;
+    flex-direction: column;
+}
+footer .contact{
+    margin: 50px auto;
+}
+
+footer .attribution{
+    margin: auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 50px;
+    font-family: var(--family2);
+}
+
+footer .attribution ul{
+    list-style: none;
+}
+.icons{
+    display: flex;
+    margin: auto;
+    margin-left: 10px;
+    
+    
+}
+
+.icons .facebook img{
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.icons .insta img{
+    width: 20px;
+    padding: 5px;
+    padding: 5px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.icons .twitter img{
+    width: 20px;
+    padding: 5px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+footer .location #mobile{
+width: 150px;
+height: 50px;
+}
